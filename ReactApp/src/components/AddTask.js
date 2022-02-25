@@ -33,7 +33,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
     const task = { taskName };
 
-    fetch('http://localhost:28908/api/task/add', {
+    fetch('http://localhost:5000/api/task/add', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(task)
