@@ -21,7 +21,7 @@ useEffect(() => {
 
 const fetchData = () => {
  setTimeout(() => {
-      fetch('http://localhost:28908/api/Task/tasks')
+      fetch('http://localhost:5000/api/Task/tasks')
       .then(res => {
         if (!res.ok) { // error coming back from server
           throw Error('could not fetch the data for that resource');
